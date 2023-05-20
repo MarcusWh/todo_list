@@ -12,7 +12,7 @@ app.set("view engine", "ejs");
 
 
 
-mongoose.connect("mongodb+srv://mwhiteley:Xjux4zsHXwp7Gr8@cluster0.n5is7fv.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(dburi, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to MongoDB');
     }).catch((err) => {
